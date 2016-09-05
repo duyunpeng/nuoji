@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="mappingService" class="chess.core.mapping.MappingService"/>
+
+    <bean id="idFactory" class="chess.core.common.id.IdFactory" init-method="init">
+        <property name="prefix" value=""/>
+        <property name="suffixValue" value="288"/>
+        <property name="sequenceAppService" ref="sequenceService"/>
+    </bean>
+
+    <bean id="openLotteryThread" class="chess.core.thread.OpenLotteryThread" init-method="start"
+          destroy-method="interrupt">
+        <property name="historyService" ref="historyService"/>
+    </bean>
+
+
+    <!--要定时执行的方法-->
+    <bean id="testTaskJob" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <!--指定要定时执行的方法所在类，将定时任务定义成bean-->
+        <property name="targetObject" ref="historyService"/>
+        <!--指定定时执行的方法-->
+        <property name="targetMethod" value="initCreate"/>
+        <!--指定目标封装为有状态的任务，有状态的任务不能并发执行，无状态的任务可并发执行-->
+        <property name="concurrent" value="false"/>
+    </bean>
+    <!-- 定义触发时间 -->
+    <bean id="doTime"
+          class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+        <property name="jobDetail">
+            <ref bean="testTaskJob"/>
+        </property>
+        <!-- cron表达式，此处是每天23点59执行 -->
+        <property name="cronExpression">
+            <value>0 0 0 * * ?</value>
+        </property>
+    </bean>
+    <!--启动工作-->
+    <bean lazy-init="false"
+          class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+        <property name="triggers">
+            <list>
+                <!-- 这里添加多个定时任务触发器 -->
+                <ref bean="doTime"/>
+            </list>
+        </property>
+    </bean>
+</beans>

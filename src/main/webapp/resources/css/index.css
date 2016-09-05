@@ -1,0 +1,404 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,input,p,th,td {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset,img {
+    border: 0;
+    display: block
+}
+
+ol,ul {
+    list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-size: 100%;
+}
+
+em {
+    font-style: normal;
+}
+
+body {
+    background: #1c1c1c;
+    height: 100%;
+    color: #888;
+    font: 12px/160% Tahoma,Arial,"微软雅黑","Hiragino Sans GB","新宋体";
+    -webkit-text-size-adjust: none;
+}
+
+body,div,span,ul,li,h1,h2,h3,h4,p,a,img,input,select,textarea {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none
+}
+
+input,select,textarea {
+    outline: none
+}
+
+a,img {
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+table {
+    border-collapse: 0;
+    border-spacing: 0
+}
+
+td {
+    word-break: break-all;
+    word-wrap: break-word;
+    width: 25%;
+}
+.clear:after{visibility:hidden;content:" "; clear:both;}
+.clear::after{ display: block;   font-size: 0px;    height: 0px;}
+
+.header{width: 100%;height: 120px;}
+.conten{width: 990px; margin: 0 auto;}
+.header .logo{display: block;width:245px;height: 120px;background:url(../img/img_1.png) no-repeat scroll 0 0;float: left;overflow: hidden;}
+.header .title{background: url(../img/img_2.png) no-repeat center; width: 500px; height: 120px;float: left;}
+
+.header .time {
+    float: right;
+    text-align: center;
+    line-height: 30px;
+    font-size: 18px;
+    color: #ffffff;
+    padding-top: 85px;
+}
+
+.header .time span {
+    color: #ee931e;
+    padding-right: 10px;
+}
+
+.content-box{width: 990px; margin: 0 auto;background-color: #151515;}
+.roulette,.winning{border: 3px solid #000000;box-shadow: 0px 5px 5px #000000;}
+.roulette .title,.winning .title{background: url(../img/img_beijing.png) repeat-x;width: 100%;height: 53px;line-height: 53px;}
+.roulette .title .lo_text{padding: 4px 6px;background: url(../img/logo.png) no-repeat center;width: 155px; height: 45px;float: left;}
+
+.roulette .title .visit {
+    float: right;
+    padding-right: 6px;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+.roulette .title .visit span{color: #ee931e;}
+.roulette .rou_cont{background-color: #7a6344;padding-top: 60px;padding-bottom: 30px;}
+.roulette .rou_cont .item{background: url(../img/ing_lunpan.png) no-repeat center; width: 290px; height: 290px;float: left; padding: 19px;position: relative;}
+.roulette .rou_cont .item .img{position: absolute;top: 50%;left: 50%;margin-top: -104px;margin-left: -104px;}
+/*.roulette .rou_cont .item .img:hover{transform:rotate(1200deg);transition: all 1s;}*/
+.roulette .count_down{background: url(../img/img_shijian.png) no-repeat center;width:380px; height: 70px;margin: 0 auto;line-height: 70px;
+    color: #FFFFFF;font-size:24px; text-align: center;}
+.winning{margin-top: 10px;}
+.winning .title .number{font-size: 16px;color: #FFFFFF;float: left;width: 150px;}
+.winning .title .number span{color: #ee931e;margin: 0 8px;}
+.winning .title .people{float: left;background: #000000;border-radius: 10px;width: 800px;height: 33px;line-height: 33px;margin-top: 10px;padding-left: 10px;overflow: hidden;}
+.winning .title .people span{color: #EE931E;margin-right: 10px;}
+.winning_record{margin-top: 10px;padding-bottom: 10px; background: #1c1c1c;}
+.winning_record table{width: 100%;border-collapse: collapse;}
+.winning_record table th {
+    border-bottom: 1px solid #444;
+    background: #999;
+    line-height: 32px;
+    text-align: center;
+    font-weight: normal;
+    color: #000000;
+}
+.winning_record table td {
+    color: #aaa;
+    padding: 3px;
+    line-height: 20px;
+    text-align: center;
+}
+.kj_qiu1 {
+    overflow: hidden;
+    zoom: 1;
+    height: 30px;
+    width: 150px;
+    margin: 0 auto;
+}
+.kj_qiu1 span {
+    float: left;
+    background: url(../img/kj_qiu.png) no-repeat left center;
+    text-align: center;
+    display: block;
+    padding: 5px 5px 5px 0px;
+    line-height: 25px;
+    height: 25px;
+    width: 25px;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+}
+.kj_qiu1 .bule{background: url(../img/kj_qiu2.png) no-repeat left center;}
+
+.propaganda_list{width: 100%;margin-top: 10px;}
+
+.propaganda_list .itme {
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding: 4px 0;
+}
+
+.propaganda_list .itme img {
+    width: 233px;
+    height: 108px;
+    margin: 0 auto;
+}
+
+.propaganda_list table {
+    width: 100%;
+    border-collapse: separate;
++border-collapse: collapse;
+    border-spacing: 0;
+}
+.propaganda_list table td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 4px 0;
+}
+.propaganda_list table td img{margin: 0 auto;max-width: 100%;}
+.friendship_link{margin-top: 10px;background-color: #2a2a2a;border-radius: 10px; width: 100%;}
+
+.friendship_link .title {
+    background: url(../img/img_xing.png) no-repeat right;
+    width: 980px;
+    height: 40px;
+    line-height: 40px;
+    color: #EE931E;
+    font-size: 24px;
+    padding-left: 10px;
+}
+.friendship_link .link{padding:0 10px 10px;}
+
+.friendship_link .link span, .friendship_link .link a {
+    float: left;
+    font-size: 14px;
+    color: #FFFFFF;
+    height: 25px;
+    line-height: 25px;
+    width: 80px;
+    font-weight: bold;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.friendship_link .link a {
+    font-size: 16px;
+    color: #AAAAAA;
+    font-weight: 400;
+    width: 133px;
+    margin-right: 5px;
+}
+
+.friendship_link .link a:hover {
+    color: #EE931E;
+}
+
+.friendship_link .link ul li{float: left;font-size: 14px;color: #FFFFFF;height:25px;line-height: 25px; width:80px;font-weight: bold;text-overflow: ellipsis;
+    white-space: nowrap; overflow: hidden;}
+.friendship_link .link ul li a{font-size: 12px;color:#AAAAAA;font-weight: 400;}
+.friendship_link .link ul li a:hover{color: #EE931E;}
+
+.footer{width: 100%;background-color: #000000;text-align: center;color: #FFFFFF;margin-top: 30px;height: 50px;line-height: 50px;}
+.winning_record table th .more{color: #FFFFFF;float: right;}
+
+.propaganda_list{width: 100%;margin-top: 10px;}
+.propaganda_list table {
+    width: 100%;
+    border-collapse: separate;
++border-collapse: collapse;
+    border-spacing: 0;
+}
+.propaganda_list table td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 4px 0;
+}
+.propaganda_list table td img{margin: 0 auto;max-width: 100%;}
+.friendship_link{margin-top: 10px;background-color: #2a2a2a;border-radius: 10px; width: 100%;}
+.friendship_link .title{background: url(../img/img_xing.png) no-repeat right;width:980px;height: 40px;line-height: 40px;color: #EE931E;font-size: 16px;padding-left:10px;}
+.friendship_link .link{padding:0 10px 10px;}
+.friendship_link .link ul li{float: left;font-size: 14px;color: #FFFFFF;height:25px;line-height: 25px; width:80px;font-weight: bold;text-overflow: ellipsis;
+    white-space: nowrap; overflow: hidden;}
+.friendship_link .link ul li a{font-size: 12px;color:#AAAAAA;font-weight: 400;}
+.friendship_link .link ul li a:hover{color: #EE931E;}
+
+.footer{width: 100%;background-color: #000000;text-align: center;color: #FFFFFF;margin-top: 30px;height: 50px;line-height: 50px;}
+.winning_record table th .more{color: #FFFFFF;float: right;}
+
+
+.roulette .title .nav{float: left; margin-left: 100px; }
+.roulette .title .nav a{background:#353535;color: #FFFFFF; font-size: 18px;padding:0 30px;display: block;border-left: 2px solid #000000; float: left;line-height: 50px;
+    background: -webkit-linear-gradient(#4b4b4b, #353535); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#4b4b4b, #353535); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#4b4b4b, #353535); /* Firefox 3.6 - 15 */
+    background: linear-gradient(#4b4b4b, #353535); /* 标准的语法 */}
+.roulette .title .nav .no{background-color: #000000;color: #EE931E;border-bottom: 3px solid #EE931E;border-left: none;background: linear-gradient(#000000, #000000)}
+.roulette .introduction{padding: 15px;border-top: 3px solid #000;}
+.roulette .introduction p{text-indent: 2em;font-size: 14px;line-height: 24px;letter-spacing: 2px;padding-bottom: 10px;}
+/*下载中心*/
+.roulette .introduction .edition{padding: 10px;font-size: 14px; line-height: 24px; border-radius: 5px;}
+
+.download{text-align: center;}
+.download .android, .download .ios{
+    border-radius: 5px;
+    color: #ffffff;border: none;
+    width: 160px;
+    margin-bottom: 10px;
+    font-size: 20px;height: 45px;line-height: 45px;cursor: pointer;}
+
+.download .android{background: -webkit-linear-gradient(#c4ed3a, #6d8f00);
+    background: -o-linear-gradient(#c4ed3a, #6d8f00);
+    background: -moz-linear-gradient(#c4ed3a, #6d8f00);
+    background: linear-gradient(#c4ed3a, #6d8f00);}
+.download .ios{background: -webkit-linear-gradient(#ed8f74, #e21b0c);
+    background: -o-linear-gradient(#ed8f74, #e21b0c);
+    background: -moz-linear-gradient(#ed8f74, #e21b0c);
+    background: linear-gradient(#ed8f74, #e21b0c);}
+.download img{width: 150px; height: 150px;}
+
+
+
+.pagination {
+    display: inline-block;
+    padding-left: 0;
+    margin: 20px 0;
+    border-radius: 4px
+}
+
+.pagination > li {
+    display: inline
+}
+
+.pagination > li > a, .pagination > li > span {
+    position: relative;
+    /*float: left;*/
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #428bca;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd
+}
+
+.pagination > li:first-child > a, .pagination > li:first-child > span {
+    margin-left: 0;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px
+}
+
+.pagination > li:last-child > a, .pagination > li:last-child > span {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px
+}
+
+.pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus {
+    color: #2a6496;
+    background-color: #eee;
+    border-color: #ddd
+}
+
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+    z-index: 2;
+    color: #fff;
+    cursor: default;
+    background-color: #428bca;
+    border-color: #428bca
+}
+
+.pagination > .disabled > span, .pagination > .disabled > span:hover, .pagination > .disabled > span:focus, .pagination > .disabled > a, .pagination > .disabled > a:hover, .pagination > .disabled > a:focus {
+    color: #777;
+    cursor: not-allowed;
+    background-color: #fff;
+    border-color: #ddd
+}
+
+.pagination-lg > li > a, .pagination-lg > li > span {
+    padding: 10px 16px;
+    font-size: 18px
+}
+
+.pagination-lg > li:first-child > a, .pagination-lg > li:first-child > span {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px
+}
+
+.pagination-lg > li:last-child > a, .pagination-lg > li:last-child > span {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px
+}
+
+.pagination-sm > li > a, .pagination-sm > li > span {
+    padding: 5px 10px;
+    font-size: 12px
+}
+
+.pagination-sm > li:first-child > a, .pagination-sm > li:first-child > span {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+
+.pagination-sm > li:last-child > a, .pagination-sm > li:last-child > span {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px
+}
+
+.pager {
+    padding-left: 0;
+    margin: 20px 0;
+    text-align: center;
+    list-style: none
+}
+
+.pager li {
+    display: inline
+}
+
+.pager li > a, .pager li > span {
+    display: inline-block;
+    padding: 5px 14px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 15px
+}
+
+.pager li > a:hover, .pager li > a:focus {
+    text-decoration: none;
+    background-color: #eee
+}
+
+.pager .next > a, .pager .next > span {
+    float: right
+}
+
+.pager .previous > a, .pager .previous > span {
+    float: left
+}
+
+.pager .disabled > a, .pager .disabled > a:hover, .pager .disabled > a:focus, .pager .disabled > span {
+    color: #777;
+    cursor: not-allowed;
+    background-color: #fff
+}
+
+.text-right {
+    text-align: right
+}
+
+.text-center {
+    text-align: center
+}
+
